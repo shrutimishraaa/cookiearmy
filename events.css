@@ -9,7 +9,7 @@
 
 .card{
   width: 20%;
-  height: 60%;
+  height: auto;
   display: inline-block;
   box-shadow: 2px 2px 20px black;
   border-radius: 5px; 
@@ -27,8 +27,7 @@
 
 .content .des {
 	opacity: 0;
-	width: 100%;
-	
+	width: 100%;	
 }
 
 .card:hover .image {
@@ -42,11 +41,12 @@
 }
 
 .card-block__title {
-	margin-top: 200px;
+	
 }
 
 .card:hover .card-block__title {
-    margin-top: 30px;
+    position: relative;
+    margin-top: 60px;
     -webkit-transform: translateY(-10%);
     transform: translateY(-10%);
     transition: -webkit-transform .5s cubic-bezier(.075,.82,.165,1);
@@ -54,8 +54,8 @@
     transition: transform .5s cubic-bezier(.075,.82,.165,1),-webkit-transform .5s cubic-bezier(.075,.82,.165,1);
 }
 
-.content {
-    position: absolute;
+.card:hover .content {
+    position: relative;
     margin-left: 20px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -63,4 +63,5 @@
     transition: transform .5s cubic-bezier(.075,.82,.165,1);
     transition: transform .5s cubic-bezier(.075,.82,.165,1),-webkit-transform .5s cubic-bezier(.075,.82,.165,1);
 }
+
 
